@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disney+ | Movies and Shows</title>
+    <link rel="icon" href="Assets/Icons&Logos/web_Icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="index.js"></script>
+    <link rel = "stylesheet" type = "text/css"href = "index.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img class = "disneyIcon" src="Assets/Icons&Logos/disney+_Logo.png"></li>
+            <li class="navLink"><a href="#"><img class = "navIcon" src="Assets/Icons&Logos/home_Icon.png"><span class = "toHide">HOME</span></a></li>
+            <li class="navLink"><a href="#"><img class = "navIcon" src="Assets/Icons&Logos/search_Icon.png"><span class = "toHide">SEARCH</span></a></li>
+            <li class="navLink"><a href="#"><img class = "navIcon" src="Assets/Icons&Logos/plus_Icon.png"><span class = "toHide">WATCHLIST</span></a></li>
+            <li class="toHide navLink"><a href="#"><img class = "navIcon" src="Assets/Icons&Logos/star_Icon.png">ORIGINALS</a></li>
+            <li class="toHide navLink"><a href="#"><img class = "navIcon" src="Assets/Icons&Logos/movie_Icon.png">MOVIES</a></li>
+            <li class="toHide navLink"><a href="#"><img class = "navIcon" src="Assets/Icons&Logos/series_Icon.png">SERIES</a></li>
+            <li class="unHide navLink">
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="navIcon" style="width:auto;" src="Assets/Icons&Logos/menu_Icon.png"/>
+                    </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#"><img class = "navIcon" src="Assets/Icons&Logos/star_Icon.png">ORIGINALS</a>
+                        <a class="dropdown-item" href="#"><img class = "navIcon" src="Assets/Icons&Logos/movie_Icon.png">MOVIES</a>
+                        <a class="dropdown-item" href="#"><img class = "navIcon" src="Assets/Icons&Logos/series_Icon.png">SERIES</a>
+                    </div>
+                </div>
+            </li>
+            <li style="float:right; margin-bottom: 10px;"><img id = "profileIcon" src= "Assets/Icons&Logos/profile_Icon.png"></li>
+        </ul>
+    </nav>
+    
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/Banners/banner1.jfif">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner2.jfif">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner3.jfif">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner4.jfif">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner5.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner6.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner7.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner8.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner9.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Banners/banner10.jpg">
+            </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" style="opacity: .5;" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" style="opacity: .5;" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    
+    <!--Content div-->
+    <div class = "content" style="margin-bottom: 40px;">
+        <div class="studio_Click">
+            <div class="item"><a href = "#" id="click1"><img src="Assets/Icons&Logos/disneyIcon_click.png"></a></div>
+            <div class="item"><a href = "#" id="click2"><img src="Assets/Icons&Logos/pixarIcon_click.png"></a></div>
+            <div class="item"><a href = "#" id="click3"><img src="Assets/Icons&Logos/marvelLogo_click.png"></a></div>
+            <div class="item"><a href = "#" id="click4"><img src="Assets/Icons&Logos/starwarsIcon_click.png"></a></div>
+            <div class="item"><a href = "#" id="click5"><img src="Assets/Icons&Logos/nationalgeographicIcon_click.png"></a></div>
+        </div>
+        
+        <h4>Recommended For You</h4>
+        <div id="content1" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/High_School_Musical_Series.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Winnie_the_Pooh.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Many_Adventures_of_Winnie_the_Pooh.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Duck_Tales_the_Movie_Treasure_of_the_Lost_Lamp.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Lizzie_McGuire_Movie.jfif"></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Piglet's_Big_Movie.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/High_School_Musical_3.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Winnie_the_Pooh_A_Very_Merry_Pooh_Year.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Motocrossed.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/High_School_Musical.jfif"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content1" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content1" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Originals</h4>
+        <div id="content2" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Diary_of_a_Future_President.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/TOGO.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Mandalorian.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/High_School_Musical_Series.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/High_School_Musical_Special.jpg"></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Encore.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Pick_of_the_Litter.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_World_According_to_Jeff.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Forky_asks_a_Question_Collection.jfif"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Imagineering.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content2" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content2" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Continue Watching</h4>
+        <div id="content3" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/Duck_Tales.jfif"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content3" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content3" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Hit Movies</h4>
+        <div id="content4" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Avatar.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Frozen.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Toy_Story_3.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Avengers_Endgame.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Force_Awakens.jpg"></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Pirates_of_the_Caribbean_Deadman's_Chest.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Finding_Dory.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Avengers.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Last_Jedi.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Finding_Nemo.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content4" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content4" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Trending</h4>
+        <div id="content5" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/Aladdin.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Mandalorian.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Frozen.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/Toy_Story_3.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/High_School_Musical_Series.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Avengers_Endgame.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content5" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content5" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Out of the Vault</h4>
+        <div id="content6" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/Dumbo.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Aristocats.jpg"></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Aladdin_Cartoon.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Lady_and_the_Tramp.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Peter_Pan.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/101_Dalmations.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Snow_White.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content6" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content6" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>If You Like The Mandalorian</h4>
+        <div id="content7" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Force_Awakens.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Last_Jedi.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content7" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content7" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Ultra HD and HDR</h4>
+        <div id="content8" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Aladdin.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Finding_Dory.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Last_Jedi.jpg"></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/TOGO.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/What_Is_Reading.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content8" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content8" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Disney Channel Favorites</h4>
+        <div id="content9" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content9" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content9" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Musicals</h4>
+        <div id="content10" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/High_School_Musical_Series.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/Aladdin.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content10" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content10" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Throwbacks</h4>
+        <div id="content11" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content11" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content11" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Beasts and Monsters</h4>
+        <div id="content12" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content12" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content12" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Nostalgic Movies</h4>
+        <div id="content13" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content13" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content13" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Disney Junior Series</h4>
+        <div id="content14" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content14" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content14" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Feel-Good Sports Movies</h4>
+        <div id="content15" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content15" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content15" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Mickey Mouse through the Years</h4>
+        <div id="content16" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content16" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content16" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Documentaries</h4>
+        <div id="content17" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_World_According_to_Jeff.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Imagineering.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content17" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content17" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Shorts</h4>
+        <div id="content18" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/What_Is_Reading.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content18" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content18" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Vintage Disney</h4> 
+        <div id="content19" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content19" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content19" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Best Friends</h4>
+        <div id="content20" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/Aristocats.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content20" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content20" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Fun Mysteries</h4>
+        <div id="content21" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content21" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content21" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Action and Adventure</h4>
+        <div id="content22" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Aladdin.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Last_Jedi.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Mandalorian.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/TOGO.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Avatar.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/Avengers_Endgame.jpg"></div>
+                        <div class="item col-sm"><img src="Assets/Content/The_Force_Awakens.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content22" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content22" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Animals and Nature</h4>
+        <div id="content23" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src="Assets/Content/Pick_of_the_Litter.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content23" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content23" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+        <h4>Inspired by True Stories</h4>
+        <div id="content24" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src="Assets/Content/TOGO.jpg"></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row section1">
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                        <div class="item col-sm"><img src=""></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#content24" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#content24" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <img class = "img_Center disneyIcon" src="Assets/Icons&Logos/disney+_Logo.png"></li>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Subscriber Agreement</a></li>
+            <li><a href="#">Your California Privacy Rights</a></li>
+            <li><a href="#">Do Not Sell My Info</a></li>
+            <li><a href="#">Children's Online Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Closed Captioning</a></li>
+            <li><a href="#">Ways to Watch</a></li>
+            <li><a href="#">Gift Disney+</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Interest-based Ads</a></li>
+        </ul>
+        <p>© Disney. All Rights Reserved.</p>
+    </footer>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
