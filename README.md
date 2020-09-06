@@ -1,5 +1,5 @@
 # Disney-Recreation
-This is a recreation of the Disney+ homepage writen in HTML5, CSS, and Javascript(Jquery). I created this website to practice and demonstrate my skills in front-end development.
+This is a recreation of the Disney+ homepage written in HTML5, CSS, and Javascript(Jquery). I created this website to practice and demonstrate my skills in front-end development.
 
 ### Features
 
